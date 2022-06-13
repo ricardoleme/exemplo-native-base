@@ -1,5 +1,5 @@
 import React from "react"
-import { NativeBaseProvider, Divider, ScrollView } from "native-base"
+import { NativeBaseProvider, Divider, ScrollView, Box } from "native-base"
 import Header from './src/components/Header'
 import Appbar from './src/components/Appbar'
 import Textos from './src/components/Textos'
@@ -11,12 +11,15 @@ export default function App() {
 
   return (
     <NativeBaseProvider>
-      <ScrollView>
+      <ScrollView >
+      <Box flex={1} _dark={{bg: "coolGray.800"}} _light={{bg: "warmGray.50"}}>
         <Appbar />
         <Textos />
         <Divider />
         <Header />
+        </Box>
       </ScrollView>
+      
     </NativeBaseProvider>
   )
 }

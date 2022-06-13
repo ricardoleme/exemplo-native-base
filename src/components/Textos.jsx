@@ -23,7 +23,7 @@ export default function Header() {
         <Text bold>Negrito</Text>
         <Text italic>Itálico</Text>
         <Text underline>Underline</Text>
-        <Text highlight _dark={{ color: "coolgray.800" }}>
+        <Text highlight  _light={{ color: "amber.400" }} _dark={{ color: "amber.700" }}>
           highlight
         </Text>
         <Text>
